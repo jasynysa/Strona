@@ -1,0 +1,86 @@
+body
+{
+    background-image: url("obrazy/bananas.png");
+    font-family: 'Lato', sans-serif;
+}
+a:link
+{
+    color: black;
+    text-decoration: none;
+}
+a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover
+{
+    color: rgb(155, 0, 0);
+    text-decoration: none;
+}
+a:active
+{
+    color: black;
+    text-decoration: none;
+}
+h1
+{
+    text-transform: uppercase;
+}
+
+        #naglowek
+        {
+           
+           background-color: black; 
+           color:yellow;
+           text-align: center;
+            font-weight: 100;
+            
+            width: 100%;
+        }
+        #menu
+        {
+            
+            background-color: rgb(36, 90, 31);
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        #stopka
+        {
+            clear: both;
+            background-color:brown;
+            padding: 15px;
+        }
+        .opcja
+        {
+            float: left;
+            padding: 10px;
+            margin-top: 30px;
+            border-right: 2px dotted red;
+        }
+        .opcja:hover
+        {
+            background-color: azure;
+        }
+        
+        .sekcja
+        {
+            background-color: blueviolet;
+            width: 60%;
+            min-height: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+        }
+        .doGory
+        {
+            width: 64px;
+            height: 64px;
+            text-decoration: none;
+            background: url("obrazy/up.png") no-repeat 0px 0px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px; 
+            display: none;
+        }
+        

@@ -1,8 +1,107 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <title>Borys</title>
+        <meta name="description" content="To jest strona tylko dla prawdzowych Borysow">
+        <meta name="keywords" content="borys, borysek, prawdziwy borys">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery.scrollTo.min.js"></script>
+        <script>
+        jQuery(function($)
+        {
+            //resetowanie scrolla
+            $.scrollTo(0);
 
+            $('#link0').click(function(){ $.scrollTo($('#sekcja0'), 500);});
+            $('#link1').click(function(){ $.scrollTo($('#sekcja1'), 500);});
+            $('#link2').click(function(){ $.scrollTo($('#sekcja2'), 500);});
+            $('#link3').click(function(){ $.scrollTo($('#sekcja3'), 500);});
+            $('#link4').click(function(){ $.scrollTo($('#sekcja4'), 500);});
+            $('#link5').click(function(){ $.scrollTo($('#sekcja5'), 500);});
+            $('.doGory').click(function(){ $.scrollTo($('body'), 1000);});
+
+            //ukrywanie przycisku "odGory" w zaleznosci od pozycji okna wzgledem gory strony
+            $(window).scroll(function()
+            {
+                if($(this).scrollTop()>300) $('.doGory').fadeIn();
+                else $('.doGory').fadeOut();
+            }
+            )
+
+        }
+        );
+        </script>
     </head>
+
+
+
     <body>
-        
+        <div id="naglowek">
+            <h1>To jest strona o jedzeniu</h1>
+        </div>
+            
+        <a class="doGory" href="#"></a>
+
+        <div id="menu">
+                <h1> POTRAWY</h1>
+
+                <a id="link0" href="#">
+                    <div class="opcja">
+                    opcja 1
+                    </div>
+                </a>
+                
+                <a id="link1" href="#">
+                    <div class="opcja">
+                    opcja 2
+                    </div>
+                </a>
+                
+                <a id="link2" href="#">
+                    <div class="opcja">
+                    opcja 3
+                    </div>             
+                </a>
+
+                <a id="link3" href="#">
+                        <div class="opcja">
+                        opcja 4
+                        </div>             
+                 </a>
+
+                <a id="link4" href="#">
+                    <div class="opcja">
+                    opcja 5
+                    </div>             
+                </a>
+
+                <a id="link5" href="#">
+                    <div class="opcja">
+                    opcja 6
+                    </div>             
+                </a>
+
+                <div style="clear:both;"></div>
+        </div>   
+          
+        <div id="sekcja0"></div>
+        <div class="sekcja">sekcaj pierwsza</div>
+        <div id="sekcja1"></div>
+        <div class="sekcja">druga</div>
+        <div id="sekcja2"></div>
+        <div class="sekcja">trzecia</div>
+        <div id="sekcja3"></div>
+        <div class="sekcja"></div>
+        <div id="sekcja4"></div>
+        <div class="sekcja"></div>
+        <div id="sekcja5"></div>
+        <div class="sekcja"></div>
+            
+        <div id="stopka">
+                <h1>to jest stopka</h1>
+        </div>
     </body>
 </html>
