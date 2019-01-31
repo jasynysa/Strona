@@ -48,9 +48,10 @@ h2
         #menu
         {
             
-            background-color: rgb(36, 90, 31);
+            background-color: rgb(7, 87, 0);
             padding: 15px;
             margin-bottom: 10px;
+            color: blanchedalmond;
         }
         #stopka
         {
@@ -64,22 +65,24 @@ h2
             padding: 10px;
             margin-top: 30px;
             border-right: 2px dotted red;
+            color: blanchedalmond;
         }
        
         .opcja:hover
         {
-            background-color: azure;
+            background-color: rgb(56, 1, 107);
         }
         
         .sekcja
         {
             padding: 10px;
-            background-color: blueviolet;
+            background-color: rgb(56, 1, 107);
             width: 60%;
             min-height: 1000px;
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 10px;
+            color: blanchedalmond;
         }
         
         .doGory
@@ -94,3 +97,9 @@ h2
             display: none;
         }
         
+.obraz
+{ 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
